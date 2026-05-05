@@ -3,72 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soul Dust Records | Official Portal</title>
+    <title>SDR Portal | Soul Dust Records Artist Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Afro-Futurist Background Overlay -->
-    <div class="vibranium-glow"></div>
-
-    <header>
-        <nav>
-            <div class="logo">SOUL DUST <span>RECORDS</span></div>
-            <div class="location">DURBAN, SOUTH AFRICA</div>
+<div class="dashboard-wrapper">
+    <!-- Sidebar Navigation (TuneCore Style) -->
+    <aside class="sidebar">
+        <div class="brand-area">
+            <img src="8b57a198-4998-49d2-9538-4b4c4aeceed0_removalai_preview.png" alt="Soul Dust Records" class="sidebar-logo">
+        </div>
+        <nav class="side-nav">
+            <a href="#" class="nav-item active">Dashboard</a>
+            <a href="#" class="nav-item">Music Distribution</a>
+            <a href="#" class="nav-item">Royalties & Finance</a>
+            <a href="#" class="nav-item">Artist Tools</a>
+            <a href="#" class="nav-item">Support</a>
         </nav>
-    </header>
+        <div class="sidebar-footer">
+            <p>Durban, ZA</p>
+        </div>
+    </aside>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>THE HEARTBEAT OF THE SOUTH</h1>
-                <p>Digital Distribution & Artist Management Portal</p>
-                <div class="contact-pill">souldustrecords@gmail.com</div>
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-box">Search Catalog...</div>
+            <div class="user-profile">
+                <span>souldustrecords@gmail.com</span>
+                <div class="avatar"></div>
             </div>
-        </main>
+        </header>
 
-        <section class="portal-grid">
-            <!-- RELEASE SDR001 -->
-            <div class="release-card">
-                <div class="catalog-id">SDR001</div>
-                <div class="artwork-placeholder">
-                    <span>UPCOMING RELEASE</span>
-                </div>
-                <div class="release-info">
-                    <h3>Title: [Pending]</h3>
-                    <p>Artist: [Pending]</p>
-                    <div class="status-badge">PREPARING METADATA</div>
-                </div>
-                <button class="portal-btn">OPEN SUBMISSION PORTAL</button>
-            </div>
-
-            <!-- ADD NEW RELEASE SLOT -->
-            <div class="release-card empty">
-                <div class="catalog-id">SDR002</div>
-                <div class="artwork-placeholder">
-                    <span class="plus">+</span>
-                </div>
-                <div class="release-info">
-                    <h3>New Project</h3>
-                    <p>Initialize Catalog</p>
-                </div>
+        <section class="artist-hero">
+            <div class="overlay"></div>
+            <div class="hero-text">
+                <h1>AFRO-DISTRO PORTAL</h1>
+                <p>Empowering the sound of the Zulu Kingdom.</p>
+                <button class="cta-gold">CREATE NEW RELEASE</button>
             </div>
         </section>
 
-        <section class="admin-tools">
-            <h2>DISTRIBUTION TOOLS</h2>
-            <div class="tools-container">
-                <a href="#" class="tool-link">Download Metadata Template</a>
-                <a href="#" class="tool-link">Submit to Static Plastic</a>
-                <a href="#" class="tool-link">Royalty Dashboard</a>
+        <section class="stats-row">
+            <div class="stat-card">
+                <h3>Total Streams</h3>
+                <div class="value">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Account Balance</h3>
+                <div class="value">R 0.00</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Releases</h3>
+                <div class="value">0</div>
+            </div>
+        </section>
+
+        <section class="release-section">
+            <div class="section-header">
+                <h2>MY CATALOG</h2>
+                <a href="#">View All</a>
+            </div>
+            
+            <div class="catalog-grid">
+                <!-- SDR001 Placeholder -->
+                <div class="release-box">
+                    <div class="art-shield">
+                        <img src="8b57a198-4998-49d2-9538-4b4c4aeceed0_removalai_preview.png" class="watermark">
+                        <span>SDR001</span>
+                    </div>
+                    <div class="release-meta">
+                        <h4>Draft Release</h4>
+                        <p>Awaiting Metadata</p>
+                    </div>
+                </div>
+
+                <!-- New Release Trigger -->
+                <div class="release-box new-trigger">
+                    <div class="art-shield empty">
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="release-meta">
+                        <h4>New Release</h4>
+                        <p>Start Upload</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Soul Dust Records. All Rights Reserved. Engineered in Durban.</p>
-    </footer>
+</div>
 
 </body>
 </html>
